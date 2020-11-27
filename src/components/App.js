@@ -1,8 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import Profile from './Profile/Profile';
+import Profile from './Profile/Profile'
+import Statistics from './Statistics/Statistics'
 
-import userData from '../data/user.json';
+import userData from '../data/user.json'
+import statsData from '../data/statistics.json'
 
 const App = () => {
     return (
@@ -13,6 +15,8 @@ const App = () => {
                 location={userData.location}
                 avatar={userData.avatar}
                 stats={userData.stats} />
+            
+            <Statistics items={statsData}/>
         </>
     )
 };

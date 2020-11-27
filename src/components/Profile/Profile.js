@@ -6,16 +6,16 @@ import Stats from './Stats'
 
 const Profile = ({ name, tag, location, avatar, stats}) => {
     return (
-        <div class="profile">
-            <div class="description">
+        <div Name="profile">
+            <div className="description">
                 <img
                 src={avatar}
                 alt="Аватар пользователя"
-                 class="avatar"
+                 className="avatar"
                 />
-                <p class="name">{name}</p>
-                <p class="tag">@{tag}</p>
-                <p class="location">{location}</p>
+                <p className="name">{name}</p>
+                <p className="tag">@{tag}</p>
+                <p className="location">{location}</p>
             </div>
             <Stats {...stats}/>
         </div>)
