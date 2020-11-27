@@ -3,10 +3,12 @@
 import Profile from './Profile/Profile'
 import Statistics from './Statistics/Statistics'
 import FriendList from './FriendsList/FriendList'
+import Transactions from './Transactions/Transactions'
 
 import userData from '../data/user.json'
 import statsData from '../data/statistics.json'
 import friendsData from '../data/friends.json'
+import transactionsData from '../data/transactions.json'
 
 const App = () => {
     return (
@@ -21,6 +23,8 @@ const App = () => {
             <Statistics items={statsData} />
             
             <FriendList friends={friendsData} />
+
+            <Transactions items={transactionsData} />
         </>
     )
 };
