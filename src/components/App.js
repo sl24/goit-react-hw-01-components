@@ -2,9 +2,11 @@
 
 import Profile from './Profile/Profile'
 import Statistics from './Statistics/Statistics'
+import FriendList from './FriendsList/FriendList'
 
 import userData from '../data/user.json'
 import statsData from '../data/statistics.json'
+import friendsData from '../data/friends.json'
 
 const App = () => {
     return (
@@ -16,7 +18,9 @@ const App = () => {
                 avatar={userData.avatar}
                 stats={userData.stats} />
             
-            <Statistics items={statsData}/>
+            <Statistics items={statsData} />
+            
+            <FriendList friends={friendsData} />
         </>
     )
 };
