@@ -8,11 +8,11 @@
   padding: 20px;
   width: 100px;
   background-color: var(--bgSecColor);
-  border-top: 3px solid var(--borderColor);
+  border-top: 2px solid var(--borderColor);
 }
 
 .item:not(:last-child) {
-  border-right: 3px solid var(--borderColor);
+  border-right: 2px solid var(--borderColor);
 }
 
 .label {

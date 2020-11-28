@@ -10,11 +10,11 @@
 
 .profile:hover,
 .profile:focus {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .description {
-  background-color: rgb(200, 209, 199);
+  background-color: var(--bgThirdColor);
   text-align: center;
   padding: 30px 0;
 }
@@ -30,7 +30,7 @@
 .name {
   margin-bottom: 8px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .tag {

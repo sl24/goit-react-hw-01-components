@@ -2,54 +2,21 @@ import PropTypes from 'prop-types';
 
 import randomColor from './randomColor';
 
-// const StatsListItem = ({id, label, percentage}) => {
-//     return (<li key={id} class="item" style={{ backgroundColor: randomColor() }}>
-//         <span class="label">{label}</span>
-//         <span class="percentage">{percentage}</span>
-//     </li>)
-// }
-
-// const StatsList = ({ items }) => {
-//     if (items.length === 0) return null
-    
-//     return <ul class="statlist">
-//         {items.map(StatsListItem)}
-//     </ul>
-// }
-
-// const Statistics = ({ title, items }) => {
-//   return (
-//     <section class="statistics">
-//       {title && <h2>class="title">{title}</h2>}
-
-//         <StatsList items={items}/>
-//         </section>)
-// }
-
-// Statistics.propTypes = {
-//   title: PropTypes.string,
-//   statslist: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       label: PropTypes.string.isRequired,
-//       percentage: PropTypes.number.isRequired,
-//     }),
-//   ),
-// };
+import s from './Statistics.module.css';
 
 function Statistics({ title, stats }) {
   return (
-    <section class="statistics">
-      {title && <h2 class="title">{title}</h2>}
-      <ul class="list">
+    <section className={s.statistics}>
+      {title && <h2 className={s.title}>{title}</h2>}
+      <ul className={s.list}>
         {stats.map(({ id, label, percentage }) => (
           <li
-            class="item"
+            className={s.item}
             key={id}
             style={{ backgroundColor: randomColor() }}
           >
-            <span class="label">{label}</span>
-            <span class="percentage">{percentage}%</span>
+            <span className={s.label}>{label}</span>
+            <span className={s.percentage}>{percentage}%</span>
           </li>
         ))}
       </ul>
@@ -68,4 +35,4 @@ Statistics.propTypes = {
   ),
 };
 
-export default Statistics
+export default Statistics;

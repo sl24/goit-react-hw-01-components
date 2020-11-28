@@ -1,0 +1,43 @@
+.statistics {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  padding-top: 20px;
+  cursor: pointer;
+  background-color: var(--bgThirdColor);
+  box-shadow: var(--boxShadow);
+  transition: transform 250ms var(--timingFunction);
+}
+
+.statistics:hover,
+.statistics:focus {
+  transform: scale(1.05);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0.07em;
+}
+
+.list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 60px;
+  color: #fff;
+  border-top: 2px solid var(--borderColor);
+}
+
+.item:not(:last-child) {
+  border-right: 2px solid var(--borderColor);
+}
