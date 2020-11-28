@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
 
-import Stats from './Stats'
+import Stats from './Stats';
+
+import defaultImage from '../../img/defaultImage.jpg';
 
 // import s from './profileStyles.css'
 
-const Profile = ({ name, tag, location, avatar, stats}) => {
+const Profile = ({ name, tag, location, avatar = defaultImage, stats}) => {
     return (
         <div class="profile">
             <div class="description">
                 <img
-                src={avatar}
+                src={avatar ?? defaultImage}
                 alt="Аватар пользователя"
                  class="avatar"
                 />
