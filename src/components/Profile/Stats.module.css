@@ -16,7 +16,7 @@
 }
 
 .label {
-  color: var(--secTextColor);
+  /* color: var(--secTextColor); */
   font-size: 12px;
 }
 
