@@ -6,6 +6,8 @@
   --bgSecColor: #adcdf7;
   --bgThirdColor: #c8d1c7;
   --borderColor: #303031;
+  --isOnlineColor: #13eb13;
+  --isOfflineColor: #e71224;
 }
 
 body {
@@ -13,8 +15,6 @@ body {
   font-family: 'Work Sans', sans-serif;
   line-height: 1.5;
   color: var(--primaryTextColor);
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 img {
