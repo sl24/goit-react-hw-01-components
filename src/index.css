@@ -1,18 +1,15 @@
-/* :root {
+:root {
   --primaryTextColor: #212121;
-  --secTextColor: #a0aab5;
-  --bgColorContainer: #e7ecf2;
-  --bgColorStats: #f3f6f9;
-  --borderColor: #e4e9f0;
-  --boxShadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --timingFn: cubic-bezier(0.4, 0, 0.2, 1);
-} */
+  --bgColorContainer: #d4ecf3;
+  --boxShadow: 8px 8px 14px 0px rgba(0, 0, 0, 0.7);
+  --timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+  --bgSecColor: #adcdf7;
+  --borderColor: #a1a1c2;
+}
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   line-height: 1.5;
   color: var(--primaryTextColor);
   padding-top: 30px;
