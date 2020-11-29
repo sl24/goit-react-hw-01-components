@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import randomColor from './randomColor';
+import randomColor from '../scripts/randomColor';
 
 import s from './Statistics.module.css';
 

@@ -1,0 +1,49 @@
+.item {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--bgThirdColor);
+  box-shadow: var(--boxShadow);
+  transition: transform 250ms var(--timingFunction);
+}
+
+.item:hover,
+.item:focus {
+  transform: scale(0.95);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.status {
+  display: block;
+  margin-right: 30px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.isOnline {
+  composes: status;
+  background-color: var(--isOnlineColor);
+}
+
+.isOffline {
+  composes: status;
+  background-color: var(--isOfflineColor);
+}
+
+.avatar {
+  margin-right: 30px;
+}
+
+.name {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 18px;
+}

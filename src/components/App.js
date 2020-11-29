@@ -1,9 +1,9 @@
-import Container from './Container/Container';
+import Container from './Container/Container.jsx';
 
-import Profile from './Profile/Profile';
-import Statistics from './Statistics/Statistics';
-import FriendList from './FriendsList/FriendList';
-import Transactions from './Transactions/Transactions';
+import Profile from './Profile/Profile.jsx';
+import Statistics from './Statistics/Statistics.jsx';
+import FriendList from './FriendsList/FriendList.jsx';
+import Transactions from './Transactions/Transactions.jsx';
 
 import userData from '../data/user.json';
 import statsData from '../data/statistics.json';
